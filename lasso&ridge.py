@@ -5,7 +5,7 @@ import joblib
 
 # Load pre-trained models
 def load_models():
-    with open("", "rb") as file:
+    with open("lasso3.joblib", "rb") as file:
         lasso_model, scaler = joblib.load(file)
     with open("ridge5.joblib", "rb") as file:
         ridge_model, _ = joblib.load(file) 
