@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
 
 # Load pre-trained models
 def load_models():
