@@ -5,9 +5,9 @@ import joblib
 
 # Load pre-trained models
 def load_models():
-    with open("/home/teddy/Music/Java/ridge/lasso3.joblib", "rb") as file:
+    with open("", "rb") as file:
         lasso_model, scaler = joblib.load(file)
-    with open("/home/teddy/Music/Java/ridge/ridge5.joblib", "rb") as file:
+    with open("ridge5.joblib", "rb") as file:
         ridge_model, _ = joblib.load(file) 
     return lasso_model, ridge_model, scaler
 
