@@ -5,6 +5,9 @@ import joblib
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
+uri = "mongodb+srv://ted678:Orange@cluster0.yqm4d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
+
 # Load pre-trained models
 def load_models():
     with open("lasso3.joblib", "rb") as file:
