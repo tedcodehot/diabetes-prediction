@@ -6,6 +6,8 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
 uri = "mongodb+srv://ted678:Orange@cluster0.yqm4d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+client = MongoClient(uri, server_api=ServerApi('1'))
+
 
 
 # Load pre-trained models
