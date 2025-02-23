@@ -70,6 +70,7 @@ def main():
         lasso_pred, ridge_pred = predict(user_data)
         user_data['lasso_prediction'] = lasso_pred
         user_data['ridge_prediction'] = ridge_pred
+        collection.insert_one(user_data)
         
         st.success(f"Lasso Prediction: {lasso_pred}")
         st.success(f"Ridge Prediction: {ridge_pred}")
