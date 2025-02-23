@@ -73,8 +73,8 @@ def main():
         
         st.success(f"Lasso Prediction: {lasso_pred}")
         st.success(f"Ridge Prediction: {ridge_pred}")
-        user_data['lasso_prediction'] = round(float(lasso_pred[0]),2)
-        user_data['ridge_prediction'] = round(float(ridge_pred[0]),2)
+        user_data['lasso_prediction'] = lasso_pred
+        user_data['ridge_prediction'] = ridge_pred
         user_data = {key: int(value) if isinstance(value,np.integer) else float(value) if isinstance(value,np.floating) else value for key ,value in user_data.items()}
         collection.insert_one(user_data)
         
